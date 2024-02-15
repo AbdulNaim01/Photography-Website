@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+    text-decoration:none;
+}
+body{
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50% 3%;
+}
+
+
+#check{
+    display: none;
+}
+.btn-one {
+    font-size: 29px;
+    font-weight: 700;
+    position: absolute;
+    left: 17px;
+    line-height: 2;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    z-index: 1;
+}
+.slidebar{
+    position: fixed;
+    left:-350px;
+    top: 2px;
+    height:100vh;
+    width:250px;
+    line-height: 60px;
+    background-color: black;
+    box-shadow:0 0 6px rgba(255,255,255, 0.9);
+    transition: all 0.3s linear;
+    opacity: 0.7;
+}   
+   
+.menus{
+    position: absolute;
+    top: 48px;
+    line-height: 40 px;
+    width:16%;
+    padding: 20px 20px;
+    font-size: 40px;
+    left:-350px;
+    transition: all 0.3s linear;
+}    
+   
+ul {
+    list-style: none;
+  }
+      
+    
+    
+    
+    
+    
+    
+    
+
+
+.logo{
+    position: absolute;
+    width: 100%;
+    line-height: 40px;
+    height:50px;
+    box-shadow:0 1.5px  rgba(255,255,255, 0.5);
+}        
+.logo a{
+    position: absolute;
+    left:25px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 2;
+   
+}
+
+
+
+.btn-two{
+    font-size: 23px;
+    font-weight: 600;
+    position: absolute;
+    left: 220px;
+    line-height:2;
+    cursor: pointer;
+    transition: all 0.2s linear; 
+}
+.menus li{
+    margin-top: 1px;
+    padding:15px 20 px; 
+
+}
+
+.menus i,a{
+    margin-right: 10px;
+    margin-left: 6px;
+    color:white;
+    font-size:25px;
+}
+
+    
+    
+
+.socialmedia i{
+    color: white;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+
+
+.socialmedia {
+  position: absolute;
+  margin-left: 25px;
+  
+  left:-350px;  
+  transition: all 0.3s linear;
+  bottom:10px;
+ 
+  
+}
+
+.menus li:hover{
+    box-shadow:0 0 4px rgba(255,255,255, 0.5);   
+
+}
+.btn-one :hover{
+    font-size: 33px;
+
+}
+.btn-two i:hover{
+    font-size: 30px;
+
+}
+.socialmedia i:hover{
+    opacity: 2;
+    transform: scale(1.2);
+}
+#check:checked~ .slidebar{
+    left:0;
+}
+#check:checked~ .menus{
+    left:0;
+}
+#check:checked~ .socialmedia{
+    left:0;
+}
+#check:checked~ .btn-one {
+    opacity: -1;
+}
+.name{
+    opacity: 0.5;
+    color:lightgray;
+}
+.name:hover{
+opacity: 1;
+transform: scale(1.1);
+color:white;
+}
